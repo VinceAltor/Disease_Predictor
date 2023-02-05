@@ -8,9 +8,9 @@ from streamlit_lottie import st_lottie
 # loading the saved models
 st.set_page_config(page_title="Disease Predictor", page_icon=":tada:", layout="wide")
 
-diabetes_model = pickle.load(open('C:/Users/User/Desktop/DISEASE PREDICTION SYSTEM/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/User/Desktop/DISEASE PREDICTION SYSTEM/heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
 
 def load_lottieurl(url):
     r = requests.get(url)
